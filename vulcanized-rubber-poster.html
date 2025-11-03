@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vulcanized Rubber — Charles Goodyear</title>
+  <link rel="icon" type="image/x-icon" href="icon.ico">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#f0f6fb; --card:#fff; --accent:#0b66a3; --muted:#556b76; --maxw:1100px;
+    }
+    body{
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: linear-gradient(135deg,#eaf4fb 0%, #f7fbff 100%);
+      color:#153246; line-height:1.5; padding:24px;
+    }
+    header{
+      background:rgba(255,255,255,0.95); padding:28px 20px; border-radius:12px;
+      max-width:var(--maxw); margin:0 auto 18px; box-shadow:0 8px 20px rgba(11,59,89,0.08);
+      display:flex; gap:18px; align-items:center;
+    }
+    .logo{width:84px;height:84px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(135deg,var(--accent),#0f6b85); color:white; font-weight:700; font-size:22px;
+    }
+    header h1{font-size:28px;margin-bottom:6px}
+    .subtitle{color:var(--muted); font-size:14px}
+    .container{max-width:var(--maxw); margin:18px auto; padding:0 16px;}
+    .exhibit{background:var(--card); border-radius:12px; padding:20px; margin-bottom:18px; box-shadow:0 10px 30px rgba(11,59,89,0.06); transition:transform .22s ease, box-shadow .22s ease;}
+    .exhibit:hover{transform:translateY(-6px); box-shadow:0 18px 40px rgba(11,59,89,0.09)}
+    .exhibit-header{display:flex;align-items:center;gap:12px;border-bottom:4px solid rgba(11,102,163,0.06); padding-bottom:12px; margin-bottom:12px}
+    .exhibit-number{background:var(--accent); color:white; padding:6px 10px; border-radius:20px; font-weight:700; font-size:0.95rem}
+    .exhibit-title{color:var(--accent); font-size:20px}
+    .section{margin:14px 0}
+    .section-title{color:#0b3b59; font-size:16px; margin-bottom:8px; display:flex;align-items:center; gap:8px}
+    .section-title::before{content:"🔎"; font-size:18px}
+    .section-title.purpose::before{content:"🧑‍🔬"}
+    .section-title.how::before{content:"⚙️"}
+    .section-title.impact::before{content:"🏭"}
+    .section-title.influence::before{content:"🗺️"}
+    .section-title.legacy::before{content:"🌟"}
+    .content{background:#f8fbff; padding:12px; border-radius:8px; color:var(--muted)}
+    .two-col{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+    .fun{font-size:14px; color:var(--muted)}
+    footer{max-width:var(--maxw); margin:18px auto; background:rgba(255,255,255,0.95); padding:14px 18px; border-radius:10px; color:var(--muted); font-size:13px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap}
+    .sources a{color:var(--accent); text-decoration:none}
+    @media (max-width:820px){ .two-col{grid-template-columns:1fr} header{flex-direction:column;align-items:flex-start} .logo{width:64px;height:64px;font-size:18px} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">VR</div>
+    <div>
+      <h1>Vulcanized Rubber — Charles Goodyear</h1>
+      <div class="subtitle">How vulcanization changed materials, industry, and daily life</div>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <article class="exhibit" aria-labelledby="purpose-title">
+      <div class="exhibit-header">
+        <div class="exhibit-number">Invention</div>
+        <div>
+          <div class="exhibit-title">The inventor & the invention’s purpose</div>
+          <div style="color:var(--muted);font-size:13px">Charles Goodyear (1800–1860) and vulcanized rubber</div>
+        </div>
+      </div>
+      <div class="section">
+        <h3 id="purpose-title" class="section-title purpose">Purpose</h3>
+        <div class="content">
+          Charles Goodyear developed vulcanization to turn raw natural rubber — which was sticky in heat and brittle in cold — into a stable, elastic, and durable material suitable for practical goods (shoe soles, hoses, belts, waterproof clothing, and later electrical insulation and tires).
+        </div>
+      </div>
+    </article>
+
+    <article class="exhibit" aria-labelledby="how-title">
+      <div class="exhibit-header">
+        <div class="exhibit-number">Process</div>
+        <div>
+          <div class="exhibit-title">How it worked (basic explanation)</div>
+          <div style="color:var(--muted);font-size:13px">A simple chemical breakthrough</div>
+        </div>
+      </div>
+      <div class="section">
+        <h3 id="how-title" class="section-title how">Mechanism</h3>
+        <div class="content">
+          Vulcanization mixes rubber with sulfur (and is aided by heat and accelerants). The sulfur atoms form cross‑links between long polymer chains in rubber, preventing them from flowing past each other. The result: material that resists softening in heat, resists cracking in cold, and has improved tensile strength and elasticity.
+        </div>
+      </div>
+    </article>
+
+    <div class="two-col">
+      <article class="exhibit" aria-labelledby="impact-title">
+        <div class="exhibit-header">
+          <div class="exhibit-number">Impact</div>
+          <div>
+            <div class="exhibit-title">Impact on American society & economy</div>
+            <div style="color:var(--muted);font-size:13px">Industry and everyday life</div>
+          </div>
+        </div>
+        <div class="section">
+          <h3 id="impact-title" class="section-title impact">Economic & social effects</h3>
+          <div class="content">
+            Vulcanized rubber enabled mass production of reliable goods (boots, hoses, belts, waterproof garments, electrical insulation, and tires). It helped create new factories, manufacturing jobs, and regional manufacturing centers, and it supported transportation and communications infrastructure — accelerating 19th‑century industrialization.
+          </div>
+        </div>
+      </article>
+
+      <article class="exhibit" aria-labelledby="influence-title">
+        <div class="exhibit-header">
+          <div class="exhibit-number">Influence</div>
+          <div>
+            <div class="exhibit-title">Regional & national influence</div>
+            <div style="color:var(--muted);font-size:13px">How vulcanization intersected with broader issues</div>
+          </div>
+        </div>
+        <div class="section">
+          <h3 id="influence-title" class="section-title influence">Regional differences & national issues</h3>
+          <div class="content">
+            The rubber industry strengthened Northern industrial growth (factories, skilled labor, rail links). Improved materials for transportation and telegraph systems aided westward expansion and national connectivity. While not a direct cause of conflicts like slavery, industrial growth shifted economic power and labor patterns across regions.
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <article class="exhibit" aria-labelledby="legacy-title">
+      <div class="exhibit-header">
+        <div class="exhibit-number">Legacy</div>
+        <div>
+          <div class="exhibit-title">Lasting legacy & fun facts</div>
+          <div style="color:var(--muted);font-size:13px">Science, industry, and a famous name</div>
+        </div>
+      </div>
+      <div class="section">
+        <h3 id="legacy-title" class="section-title legacy">Lasting legacy</h3>
+        <div class="content">
+          Vulcanization laid the foundation for modern polymer and materials engineering and enabled entire industries (automotive tires, industrial belts, consumer rubber goods). Charles Goodyear’s name endures in companies and popular culture, though he died with financial troubles despite his contribution.
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 class="section-title">Fun facts</h3>
+        <div class="content fun">
+          • Goodyear discovered the key effect of heating rubber with sulfur around 1839 after years of experimentation and patent battles. <br>
+          • "Vulcanize" comes from Vulcan, Roman god of fire — fitting for a heat‑assisted chemical process. <br>
+          • The Goodyear Tire & Rubber Company adopted his name decades after his death (no direct corporate link to Charles Goodyear himself).
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="sources">
+      Sources:
+      <div><a href="https://academic-eb-sll.orc.scoolaid.net/levels/collegiate/article/vulcanization/75786" target="_blank" rel="noopener">"Vulcanization", Encyclopædia Britannica (academic)</a></div>
+      <div><a href="https://academic-eb-sll.orc.scoolaid.net/levels/collegiate/article/Charles-Goodyear/37388" target="_blank" rel="noopener">"Charles Goodyear", Encyclopædia Britannica (academic)</a></div>
+      <div><a href="https://www.history.com/topics/inventions/charles-goodyear" target="_blank" rel="noopener">"Charles Goodyear", History.com</a></div>
+      <div style="font-size:12px;color:var(--muted);margin-top:6px">Accessed 3 Nov 2025</div>
+    </div>
+
+    <div style="text-align:right;font-size:13px;color:var(--muted)">
+      One‑page educational site • Printable • Built for classroom use
+    </div>
+  </footer>
+</body>
+</html>
